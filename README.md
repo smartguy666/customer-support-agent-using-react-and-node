@@ -165,7 +165,7 @@ class SupportAgent {
 The agent uses an intent router to determine what type of request the customer is making.
 
 The basic flow is:
-```
+
 Customer Query
       │
       ▼
