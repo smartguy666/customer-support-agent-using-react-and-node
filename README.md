@@ -38,7 +38,7 @@ This project demonstrates how to build a customer support system that can receiv
 - Express.js
 - MongoDB
 - Mongoose
-- DNotifier
+- DNotifier SDK
 - WebSocket
 - dotenv
 - CORS
@@ -116,7 +116,7 @@ dnotifier-customer-support-agent/
 ```
 ## 🔌 DNotifier Integration
 
-DNotifier is used as the real-time communication layer for the Customer Support Agent.
+DNotifier AI Infrastructure is used for AI based features using DNotifier SDK, as well as the real-time communication layer for the Customer Support Agent using the same Dnotifier SDK from within the same SDK everything can be easily you can see from this repo.
 
 The backend connects to DNotifier using WebSocket transport.
 
@@ -211,7 +211,7 @@ const intentAgent = DNotifier.defineAgent({
 });
 ## 📚 Knowledge Base
 
-The Customer Support Agent uses a Knowledge Base to answer business-specific questions.
+The Customer Support Agent uses a Dnotifier's Knowledge Base to answer business-specific questions.
 
 The Knowledge Base contains information such as:
 
@@ -443,7 +443,7 @@ const data = await response.json();
 🗄️ MongoDB
 ```
 
-MongoDB is used as the application's database layer.
+MongoDB is used as the application's database layer, you can also use Dnotifier's save db function to use their database without needing to add a separate DB.
 
 The backend uses Mongoose to connect to MongoDB.
 
