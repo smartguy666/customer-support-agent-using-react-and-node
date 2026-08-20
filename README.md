@@ -83,7 +83,7 @@ Customer Response
 ```
 
 ## 📁 Project Structure
-
+```
 dnotifier-customer-support-agent/
 │
 ├── backend/
@@ -113,7 +113,7 @@ dnotifier-customer-support-agent/
     ├── index.html
     ├── style.css
     └── script.js
-
+```
 ## 🔌 DNotifier Integration
 
 DNotifier is used as the real-time communication layer for the Customer Support Agent.
@@ -283,7 +283,7 @@ This keeps FAQ-related logic separate from the main Customer Support Agent.
 ## 📦 Status Handler
 
 The application also contains a status handler for status-related customer queries.
-
+```
 Example flow:
 
 Customer
@@ -299,7 +299,7 @@ Status Handler
    │
    ▼
 Order / Status Information
-
+```
 The current implementation can use sample/mock records during development.
 
 The same handler can later be connected to a real order database or external order management API.
@@ -324,7 +324,7 @@ complaint.handler.js
 🧠 AI + Knowledge Base Flow
 
 For general customer questions, the agent can use the Knowledge Base to retrieve relevant business information before generating a response.
-
+```
 Customer Question
        │
        ▼
@@ -344,7 +344,7 @@ AI Response
        │
        ▼
 Customer
-
+```
 This allows the agent to answer questions based on the business's own information instead of relying only on general AI knowledge.
 💬 Example Customer Queries
 
