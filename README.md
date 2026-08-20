@@ -165,7 +165,7 @@ class SupportAgent {
 The agent uses an intent router to determine what type of request the customer is making.
 
 The basic flow is:
-
+```
 Customer Query
       │
       ▼
@@ -307,12 +307,12 @@ The same handler can later be connected to a real order database or external ord
 ## 🧩 Modular Handlers
 
 Different customer support capabilities are separated into individual handlers.
-
+```
 handlers/
 │
 ├── faq.handler.js
 └── status.handler.js
-
+```
 This makes the project easier to maintain and extend.
 
 Additional handlers can be added later, for example:
