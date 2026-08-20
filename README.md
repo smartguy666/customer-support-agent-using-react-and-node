@@ -176,14 +176,14 @@ Intent Agent
       └── General
 
 For example:
-
+```
 "Where is my order?"
         ↓
 Status Intent
 "What is your return policy?"
         ↓
 General / FAQ Intent
-
+```
 The intent router can use DNotifier AI capabilities to classify incoming customer queries.
 
 Example:
@@ -233,7 +233,7 @@ await notifier.addDocument({
   recordId: `faq-${topic}`,
   content: answer,
 });
-💡 FAQ Configuration
+## 💡 FAQ Configuration
 
 Business FAQs are stored in the business configuration.
 
@@ -256,7 +256,7 @@ const businessConfig = {
       "We accept major debit and credit cards.",
   },
 };
-❓ FAQ Handler
+## ❓ FAQ Handler
 
 The FAQ handler checks whether a customer query matches an available FAQ topic.
 
@@ -373,8 +373,8 @@ What payment methods do you accept?
 
 The project includes a simple frontend chat interface built with:
 
-HTML
-CSS
+React
+Tailwind CSS
 JavaScript
 
 The frontend allows users to enter customer support questions and receive responses from the backend.
@@ -465,7 +465,7 @@ Products
 Support conversations
 Customer status
 Other business data
-⚙️ Environment Variables
+## ⚙️ Environment Variables
 
 Create a .env file inside the backend directory.
 
@@ -489,7 +489,7 @@ Add .env to .gitignore:
 
 .env
 node_modules/
-📦 Installation
+## 📦 Installation
 
 Clone the repository:
 
@@ -505,7 +505,7 @@ npm install
 
 Create your .env file and add the required environment variables.
 
-▶️ Run the Backend
+## ▶️ Run the Backend
 
 Start the development server:
 
@@ -522,7 +522,7 @@ Example output:
 
 MongoDB connected
 Server running on port 8000
-🧪 Run the Demo Server
+## 🧪 Run the Demo Server
 
 The project also includes a demo server for testing the frontend with the Customer Support Agent.
 
@@ -536,7 +536,7 @@ http://localhost:4000
 
 The demo server acts as a bridge between the frontend chat interface and the Customer Support Agent.
 
-🔐 Security
+## 🔐 Security
 
 DNotifier credentials are kept on the backend.
 
@@ -549,7 +549,7 @@ Instead, the frontend communicates with the application's backend API.
 
 This prevents sensitive credentials from being exposed to users.
 
-🛡️ Fallback Handling
+## 🛡️ Fallback Handling
 
 If the agent cannot find an appropriate answer, it can return a fallback message instead of providing an unreliable response.
 
@@ -560,7 +560,7 @@ const fallbackMessage =
 
 This provides a safer response for unsupported queries.
 
-🚦 Rate Limiting
+## 🚦 Rate Limiting
 
 The support agent can apply a rate limit to control incoming requests.
 
@@ -575,7 +575,7 @@ const businessConfig = {
 
 Rate limiting helps prevent excessive requests to the support agent.
 
-🧪 Testing
+## 🧪 Testing
 
 After starting the backend and demo server, test the agent using questions such as:
 
@@ -619,7 +619,7 @@ Add multilingual support
 Add persistent conversation storage
 Deploy the application to production
 Add an admin/support dashboard
-🎯 Project Goal
+## 🎯 Project Goal
 
 The goal of this project is to demonstrate how a Customer Support AI Agent can be built using DNotifier with a Node.js backend.
 
