@@ -396,6 +396,7 @@ const response = await fetch(
 
 
 const data = await response.json();
+```
 🔄 Frontend → Backend → Agent Flow
 ┌─────────────────┐
 │    Customer     │
@@ -440,6 +441,7 @@ const data = await response.json();
            │  Customer   │
            └─────────────┘
 🗄️ MongoDB
+```
 
 MongoDB is used as the application's database layer.
 
@@ -585,7 +587,7 @@ What payment methods do you accept?
 📋 Example Project Flow
 
 A typical customer request follows this process:
-
+```
 1. Customer enters a question
           ↓
 2. Frontend sends the question
@@ -601,7 +603,8 @@ A typical customer request follows this process:
 7. Agent generates the response
           ↓
 8. Response is returned to the customer
-🚧 Future Improvements
+```
+## 🚧 Future Improvements
 
 Possible improvements for the project include:
 
