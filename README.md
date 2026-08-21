@@ -8,8 +8,8 @@ This project demonstrates how to build a customer support system that can receiv
 
 ## ✨ Features
 
-- 🤖 AI-powered customer support
-- 💬 Real-time messaging with DNotifier
+- 🤖 AI-powered customer support with Dnotifier
+- 💬 Real-time messaging with DNotifier AI agents
 - 🧠 AI-based intent detection
 - 📚 Knowledge Base integration
 - ❓ FAQ handling
@@ -47,7 +47,7 @@ This project demonstrates how to build a customer support system that can receiv
 
 - DNotifier AI Agents
 - DNotifier Knowledge Base
-- Intent-based routing
+- DNotifier Intent-based routing
 
 ---
 
@@ -621,9 +621,8 @@ Deploy the application to production
 Add an admin/support dashboard
 ## 🎯 Project Goal
 
-The goal of this project is to demonstrate how a Customer Support AI Agent can be built using DNotifier with a Node.js backend.
+The goal of this project is to demonstrate how a Customer Support AI Agent can be built using DNotifier AI features with a Node.js backend.
 
-The application provides its own frontend and backend while using DNotifier for real-time agent communication.
+The application provides its own frontend and backend while using DNotifier for AI enabled real-time agent communication.
 
 The architecture keeps the DNotifier credentials on the server and allows customers to interact with the support agent through the application's own interface.
-
